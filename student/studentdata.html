@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <section class="pt-5">
+        <div class="container text-cenetr">
+            <h3>Student Score Form</h3>
+        <div class="my-4">
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name" class="form-control w-50" required>
+        </div>
+        <div class="my-4">
+            <label for="subject">Subject :</label>
+            <select name="subject" id="subject" class="form-control w-50" required>
+                <option value="-1">---Select Any Subject---</option>
+                <option value="1">English</option>
+                <option value="2">Maths</option>
+                <option value="3">Hindi</option>
+            </select>
+        </div>
+        <div class="my-4">
+            <label for="date">Date :</label>
+            <input type="date" name="date" id="date" class="form-control w-50" required>
+        </div>
+        <div class="my-4">
+            <label for="score">Score :</label>
+            <input type="text" name="score" id="score" class="form-control w-50" required>
+        </div>
+        <button class="btn btn-primary" id="sub" type="button">Submit</button>
+        </div>
+
+        
+    </section>
+
+    <section class="pt-5">
+        <div class="container">
+            <div class="table-scroll ">
+                <table class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                            <th>Score</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="tableDetails">
+                        
+                    </tbody>
+                </table>
+                
+
+            </div>
+            
+        </div>
+
+
+    </section>
+    <script src="./assets/js/studentdata.js"></script>
+</body>
+</html>
